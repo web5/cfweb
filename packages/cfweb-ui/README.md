@@ -1,4 +1,4 @@
-# cfweb-site
+# cfweb-ui
 
 ## Project setup
 ```

@@ -1,6 +1,10 @@
 {
   "name": "root",
+  "npmClient": "yarn",
   "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
     "lerna": "^3.22.1"
   }
