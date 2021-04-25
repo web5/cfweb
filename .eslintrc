@@ -1,0 +1,48 @@
+{
+  "root": true,
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:vue/essential",
+    "@vue/typescript/recommended",
+    "@vue/prettier",
+    "@vue/prettier/@typescript-eslint"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "project": "tsconfig.json"
+  },
+  "rules": {
+    // "no-console": [
+    //   2,
+    //   {
+    //     "allow": [
+    //       "warn",
+    //       "error"
+    //     ]
+    //   }
+    // ],
+    "@typescript-eslint/no-explicit-any": [
+      "off"
+    ],
+    "prettier/prettier": "off",
+    "linebreak-style": [
+      0,
+      "error",
+      "windows"
+    ],
+    "operator-linebreak": [
+      2,
+      "after",
+      {
+        "overrides": {
+          "?": "before",
+          ":": "before"
+        }
+      }
+    ]
+  }
+}

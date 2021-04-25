@@ -1,8 +1,32 @@
 {
   "npmClient": "yarn",
-  "version": "independent",
   "packages": [
     "packages/*"
   ],
-  "useWorkspaces": true
+  "useWorkspaces": true,
+  "version": "independent",
+  "command": {
+    "version": {
+      "allowBranch": [
+        "master",
+        "feature/*"
+      ],
+      "exact": true,
+      "ignoreChanges": [
+        "ignored-file",
+        "*.md"
+      ],
+      "message": "build: release version %v"
+    },
+    "publish": {
+      "ignoreChanges": [
+        "ignored-file",
+        "*.md"
+      ],
+      "allowBranch": [
+        "master",
+        "feature/*"
+      ]
+    }
+  }
 }
