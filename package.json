@@ -6,6 +6,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "^3.22.1"
-  }
+    "lerna": "latest"
+  },
+  "packageManager": "yarn@3.2.3"
 }
